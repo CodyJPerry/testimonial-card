@@ -19,7 +19,7 @@ export default function Home() {
           </figure>
           {/* Title */}
           <div>
-            <p className="text-lg font-semibold">Sarah Dole</p>
+            <p className="text-lg font-semibold text-neutral-900">Sarah Dole</p>
             {/* Handle */}
             <p className="text-sm text-neutral-600">@sarahdole</p>
           </div>
