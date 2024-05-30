@@ -2,30 +2,34 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="h-screen w-90 overflow-hidden mx-auto px-4 mt-[200px]">
-      <div className="bg-white rounded-md p-6 shadow space-y-4 shadow-md border border-neutral-200">
+    <main className="mx-auto mt-[200px] mx-4">
+      <div className="bg-white w-90 mx-auto rounded-md p-6 shadow space-y-4 shadow-md border border-neutral-200">
         {/* Testimonial Card */}
-        <div className="flex gap-4">
+        <section className="flex gap-4">
           {/* Header */}
-          <Image
-            src="/img/profile-thumbnail.png"
-            className="rounded-full"
-            alt="User's Avatar"
-            width={48}
-            height={48}
-          />
+          <figure aria-labelledby="avatar-label">
+            <Image
+              src="/img/profile-thumbnail.png"
+              className="rounded-full"
+              alt="User's Avatar"
+              width={48}
+              height={48}
+            />
+            <figcaption id="avatar-label" className="sr-only">User&apos;s Avatar</figcaption>
+          </figure>
           {/* Title */}
           <div>
             <p className="text-lg font-semibold">Sarah Dole</p>
             {/* Handle */}
-            <p className="text-sm text-neutral-500">@sarahdole</p>
+            <p className="text-sm text-neutral-600">@sarahdole</p>
           </div>
-        </div>
+        </section>
         <div>
           {/* Body */}
-          <p className="text-neutral-600 text-base">I&apos;ve been searching for high-quality abstract images for my design projects, 
+          <p className="text-neutral-600 text-base line-clamp-6">I&apos;ve been searching for high-quality abstract images for my design projects, 
             and I&apos;m thrilled to have found this platform. The variety and depth of creativity 
-            are astounding!</p>
+            are astounding!
+            </p>
         </div>
       </div>
     </main>
