@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="mx-auto mt-[200px] mx-4">
-      <div className="bg-white w-90 mx-auto rounded-md p-6 space-y-4 shadow-md border-2 border-neutral-200">
+      <div className="bg-white w-90 mx-auto rounded-md p-6 space-y-4 shadow border-2 border-neutral-200">
         {/* Testimonial Card */}
         <section className="flex gap-4">
           {/* Header */}
